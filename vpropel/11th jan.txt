@@ -1,0 +1,8 @@
+n=int(input())
+a=int(input())
+b=int(input())
+if (a*b*n)%(a+b)==0:
+    f=((a*b*n)/(a+b))
+else:
+    f=((a*b*n)//(a+b))+1
+print(int(f))

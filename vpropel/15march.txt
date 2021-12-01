@@ -1,0 +1,22 @@
+num_of_code_words=int(input())
+words=[]
+for i in range(0,num_of_code_words):
+    code_words=input()
+    words.append(code_words)
+#print(words)
+w=input()
+l=[]
+str1=""
+position_letter=[]
+for i in range(0,4):
+    position=int(input())
+    l.append(w[position-1])
+str1=''.join(l)
+#print(str1)
+if str1 in words:
+    print("Valid")
+else:
+    print("Invalid")
+#print(position_letter)
+
+

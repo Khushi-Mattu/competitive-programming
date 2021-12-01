@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int num;
+    scanf("%d",&num);
+    int arr[num],i,j;
+    for(i=0;i<num;i++){
+        scanf("%d",&arr[i]);
+    }
+    int count=0,m[100];
+    for(i=0;i<num;i++){
+        
+            if(arr[i]>arr[i+1]){
+                count++;
+                if(count==1){
+                    m[0]=i+1;
+                }
+            }
+        }
+    
+    if (count==0){
+        printf("Correct");
+    }
+    else if(count==1 && arr[0]>arr[num-1]){
+        printf("Easily correctable\n");
+        printf("%d",m[0]);
+    }
+    else{
+        printf("Not easily correctable");
+    }
+}

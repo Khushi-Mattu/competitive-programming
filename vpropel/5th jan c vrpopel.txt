@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main()
+{
+    int n,i,j;
+    int s=0;
+    scanf("%d",&n);
+    for (i=1;i<=n;i++)
+    {
+        if (n%i==0){
+            s+=1;
+        }
+        
+    }
+   printf("%d\n",s/2);
+   for (i=1;i<=n;i++){
+       for (j=1;j<=n;j++){
+           if ((i*j==n)&&(j>i))
+           printf("%d %d\n",i,j);
+       }
+   }
+   
+}
