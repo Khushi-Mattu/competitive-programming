@@ -15,7 +15,7 @@ class Solution {
 */
 
 
-//this is not my solution. 
+//the below one is not my solution. 
 //https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/discuss/1723118/Java-most-optimized-solution
 class Solution {
      public class TrieNode{
