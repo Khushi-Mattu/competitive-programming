@@ -2,7 +2,6 @@
 //  main.cpp
 //  Huffman
 //
-//  Created by Vatsal Chanana
 
 #include<bits/stdc++.h>
 using namespace std;
