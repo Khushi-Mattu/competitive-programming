@@ -23,10 +23,6 @@ class Solution {
                 output_arr.add(current_interval);
             }
         }
-        
-        
-        
-        
         return output_arr.toArray(new int[output_arr.size()][]);
     }
 }
