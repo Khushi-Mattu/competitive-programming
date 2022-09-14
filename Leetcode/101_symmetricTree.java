@@ -3,8 +3,6 @@ class Solution {
         // Calling isSymmetric Overloaded Function
         return isSymmetric(root, root);
     }
-    
-    // Helper Function
     public boolean isSymmetric(TreeNode t1, TreeNode t2){
         
         // If All Conditions Satisfy And Both Nodes Are Null Then Return True
