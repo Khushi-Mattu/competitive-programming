@@ -8,6 +8,56 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+class Solution {
+public ListNode mergeTwoLists(ListNode lis1, ListNode lis2) {
+    ListNode temp=new ListNode(-1);
+    
+    ListNode ans=temp;
+    while(lis1!=null && lis2!=null){
+        if(lis1.val>=lis2.val){
+            ans.next=lis2;
+            lis2=lis2.next;
+           
+        }
+        else{
+            ans.next=lis1;
+            lis1=lis1.next;
+            
+        }
+        ans=ans.next;
+    }
+    if(lis1==null){
+        while(lis2!=null){
+            ans.next=lis2;
+            lis2=lis2.next;
+            ans=ans.next;
+        }
+    }
+    if(lis2==null)
+{
+    while(lis1!=null){
+        ans.next=lis1;
+        lis1=lis1.next;
+        ans=ans.next;
+    }
+}
+
+    return temp.next;
+
+    
+}
+}
+/*
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
 
 class Solution {
 public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
